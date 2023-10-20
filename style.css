@@ -33,6 +33,9 @@ thead tr td{
 }
 
 /* Formulaire */
+section{
+    background-color: #007bff;
+}
 
 button{
     padding: 5px;
@@ -49,4 +52,71 @@ button a{
     color: white;
     font-weight: bold;
     font-size: 2rem;
+}
+
+.container{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0,0,0,0.15);
+}
+
+h2{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 5%;
+}
+
+.container form{
+    padding: 5% 10%;
+    width: 400px;
+}
+
+div{
+    margin-top: 5%;
+}
+
+input, select{
+    width: 100%;
+    padding: 1%;
+    border: none;
+    outline: none;
+    color: rgba(0,0,0,0.5);
+}
+
+#svg{
+    width: 10px;
+    padding: 1%;
+    margin-top: 20px;
+}
+
+input:active{
+    border-bottom: 2px solid #007bff;
+}
+
+input::placeholder{
+    padding: 5px;
+    font-size: 1rem;
+}
+
+.box{
+    display: flex;
+    gap: 10px;
+}
+
+#envoyer{
+    background-color: #007bff;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 2.5%;
+}
+
+#annuler{
+    background-color: rgb(162, 16, 16);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 2.5%;
 }

@@ -11,11 +11,38 @@
     <title>Le formulaire de validation</title>
 </head>
 <body>
-    <form action="#" method="get" id="idForm">
-        <input type="text" id="inputNom">
-        <input type="text" id="inputPrenom">
-        <input type="checkbox" id="svg">
-        <input type="submit" value="Envoyer">
-    </form>
+    <section>
+        <h1>KM Sercice Sarl</h1>
+    <div class="container">
+        <h2>Ajouter un employé</h2>
+        <form action="#" method="get" id="idForm">
+            <div>Nom</div>
+            <input type="text" id="inputNom" placeholder="Nom">
+            <div for="inputPrenom">Prénom</div>
+            <input type="text" id="inputPrenom" placeholder="Prénom">
+            <div for="email">Email</div>
+            <input type="email" id="email" placeholder="Email">
+            <div for="age">Age</div>
+            <input type="number" id="age" placeholder="Age">
+            <div for="poste">Poste</div>
+            <input type="text" id="poste" placeholder="Poste">
+            <div for="phone">Numéro de téléphone</div>
+            <input type="text" id="phone" placeholder="Numéro de téléphone">
+            <div>Statut marital</div>
+            <select>
+                <option value="Célibataire">Célibataire</option>
+                <option value="Marié">Marié</option>
+            </select>
+            <div for="pays">Pays d'origine</div>
+            <input type="text" id="pays" placeholder="Pays d'origine"><br>
+            <input type="checkbox" id="svg">
+            <label for="svg">Acceptez que toutes les informations fournies sont vraies!</label>
+            <div class="box">
+                <input type="submit" value="Envoyer" id="envoyer">
+                <input type="button" value="Annuler" id="annuler">
+            </div>
+        </form>
+    </div>
+    </section>
 </body>
 </html>
