@@ -129,3 +129,10 @@ input::placeholder{
     font-weight: 700;
     padding: 2.5%;
 }
+
+tbody tr td{
+    text-align: center;
+    font-size: 1.5rem;
+    font-size: 600;
+    border-bottom: 1px solid #007bff;
+}
