@@ -13,7 +13,7 @@
 <body>
     <main>
         <h1>KM Sercice sarl</h1>
-        <button><a href="formulaire.html" target="_blank">Ajouter</a></button>
+        <button id="btn1" class="btn1">Ajouter</button>
         <table>
             <thead>
                 <tr>
@@ -31,5 +31,38 @@
             </tbody>
         </table>
     </main>
+    <section>
+        <h1>KM Sercice Sarl</h1>
+    <div class="container">
+        <h2>Ajouter un employé</h2>
+        <form action="#" method="get" id="idForm">
+            <div>Nom</div>
+            <input type="text" id="inputNom" placeholder="Nom">
+            <div for="inputPrenom">Prénom</div>
+            <input type="text" id="inputPrenom" placeholder="Prénom">
+            <div for="email">Email</div>
+            <input type="email" id="email" placeholder="Email">
+            <div for="age">Age</div>
+            <input type="number" id="age" placeholder="Age">
+            <div for="poste">Poste</div>
+            <input type="text" id="poste" placeholder="Poste">
+            <div for="phone">Numéro de téléphone</div>
+            <input type="text" id="phone" placeholder="Numéro de téléphone">
+            <div>Statut marital</div>
+            <select id="select">
+                <option value="Célibataire">Célibataire</option>
+                <option value="Marié">Marié</option>
+            </select>
+            <div for="pays">Pays d'origine</div>
+            <input type="text" id="pays" placeholder="Pays d'origine"><br>
+            <input type="checkbox" id="svg">
+            <label for="svg">Acceptez que toutes les informations fournies sont vraies!</label>
+            <div class="box">
+                <input type="submit" value="Envoyer" id="envoyer">
+                <input type="button" value="Annuler" id="annuler">
+            </div>
+        </form>
+    </div>
+    </section>
 </body>
 </html>

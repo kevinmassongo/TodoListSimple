@@ -21,6 +21,11 @@ h1{
     text-align: center;
     margin-bottom: 4rem;
 }
+
+table{
+    width: 800px;
+}
+
 thead{
     background-color: #007bff;
     color: white;
@@ -30,28 +35,28 @@ thead tr td{
     padding: 10px;
     font-size: 1.5rem;
     font-weight: 600;
+    text-align: center;
 }
 
-/* Formulaire */
-section{
-    background-color: #007bff;
-}
-
-button{
-    padding: 5px;
+.btn1{
     background-color: #007bff;
     border: none;
     box-shadow: 2px 3px 3px rgba(0,0,0,0.5);
     border-radius: 5px;
     margin-bottom: 2rem;
-}
-
-button a{
     text-decoration: none;
     padding: 10px;
     color: white;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Formulaire */
+
+section{
+    background-color: #007bff;
+    display: none;
 }
 
 .container{
@@ -111,7 +116,11 @@ input::placeholder{
     font-size: 1.5rem;
     font-weight: 700;
     padding: 2.5%;
+    width: 100%;
+    border: none;
+    cursor: pointer;
 }
+
 
 #annuler{
     background-color: rgb(162, 16, 16);
