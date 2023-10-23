@@ -59,7 +59,7 @@ function phoneFunction(e){
     phone = e.target.value
 }
 
-inputSelect.addEventListener('input', selectFunction)
+inputSelect.addEventListener('click', selectFunction)
 function selectFunction(e){
     select = e.target.value
 }
@@ -88,8 +88,10 @@ function validfunction(e){
             inputEmail.value = '';
             inputAge.value = '';
             inputPoste.value = '';
+            inputPhone.value = '';
             inputSelect.value = '';
             inputPays.value = '';
+            svg.checked = '';
             main.style.display = 'block';
             section.style.display = 'none';
     }

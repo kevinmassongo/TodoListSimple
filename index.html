@@ -37,25 +37,25 @@
         <h2>Ajouter un employé</h2>
         <form action="#" method="get" id="idForm">
             <div>Nom</div>
-            <input type="text" id="inputNom" placeholder="Nom">
+            <input type="text" id="inputNom" placeholder="Nom" required>
             <div for="inputPrenom">Prénom</div>
-            <input type="text" id="inputPrenom" placeholder="Prénom">
+            <input type="text" id="inputPrenom" placeholder="Prénom" required>
             <div for="email">Email</div>
-            <input type="email" id="email" placeholder="Email">
+            <input type="email" id="email" placeholder="Email" required>
             <div for="age">Age</div>
-            <input type="number" id="age" placeholder="Age">
+            <input type="number" id="age" placeholder="Age" required>
             <div for="poste">Poste</div>
-            <input type="text" id="poste" placeholder="Poste">
+            <input type="text" id="poste" placeholder="Poste" required>
             <div for="phone">Numéro de téléphone</div>
-            <input type="text" id="phone" placeholder="Numéro de téléphone">
+            <input type="text" id="phone" placeholder="Numéro de téléphone" required>
             <div>Statut marital</div>
-            <select>
-                <option value="Célibataire" selected>Célibataire</option>
+            <select required>
+                <option value="Célibataire">Célibataire</option>
                 <option value="Marié">Marié</option>
             </select>
             <div for="pays">Pays d'origine</div>
-            <input type="text" id="pays" placeholder="Pays d'origine"><br>
-            <input type="checkbox" id="svg">
+            <input type="text" id="pays" placeholder="Pays d'origine" required><br>
+            <input type="checkbox" id="svg" required>
             <label for="svg">Acceptez que toutes les informations fournies sont vraies!</label>
             <div class="box">
                 <input type="submit" value="Envoyer" id="envoyer">
