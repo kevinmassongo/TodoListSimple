@@ -1,3 +1,43 @@
+.inputGroup {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 1em 0 1em 0;
+    max-width: 350px;
+    position: relative;
+  }
+  
+  .inputGroup input {
+    font-size: 100%;
+    padding: 0.8em;
+    outline: none;
+    border: 2px solid #fff;
+    background-color: transparent;
+    border-radius: 20px;
+    width: 100%;
+    color: white;
+  }
+  
+  .inputGroup label {
+    font-size: 100%;
+    position: absolute;
+    left: 0;
+    padding: 0.8em;
+    margin-left: 0.5em;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    color: white;
+  }
+  
+  .inputGroup :is(input:focus, input:valid)~label {
+    transform: translateY(-50%) scale(.9);
+    margin: 0em;
+    margin-left: 1.3em;
+    padding: 0.4em;
+    background-color: #007bff;
+  }
+  
+  .inputGroup :is(input:focus, input:valid) {
+    border-color: rgb(150, 150, 200);
+  }
 *{
     margin: 0;
     padding: 0;
@@ -7,6 +47,7 @@
 
 html{
     font-size: 62.5%;
+    color: white;
 }
 
 main{
@@ -16,8 +57,12 @@ main{
     transform: translate(-50%,-50%);
 }
 
+.logo{
+    color: #007bff;
+}
+
 h1{
-    font-size: 5rem;
+    font-size: 3rem;
     text-align: center;
     margin-bottom: 4rem;
 }
@@ -61,16 +106,17 @@ section{
 
 .container{
     position: absolute;
-    top: 55%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background-color: rgba(0,0,0,0.15);
+    background-color: #007bff;
 }
 
 h2{
     text-align: center;
     font-size: 2rem;
     margin-top: 5%;
+    color: white;
 }
 
 .container form{
@@ -82,12 +128,14 @@ div{
     margin-top: 5%;
 }
 
-input, select{
+select{
     width: 100%;
-    padding: 1%;
-    border: none;
-    outline: none;
-    color: rgba(0,0,0,0.5);
+    padding: 0.6rem;
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 20px;
+    font-size: 100%;
 }
 
 #svg{
@@ -107,7 +155,7 @@ input::placeholder{
 }
 
 #envoyer{
-    background-color: #007bff;
+    background-color: #fff;
     color: white;
     font-size: 1.5rem;
     font-weight: 700;
@@ -115,6 +163,7 @@ input::placeholder{
     width: 100%;
     border: none;
     cursor: pointer;
+    color: #007bff;
 }
 
 
@@ -124,6 +173,8 @@ input::placeholder{
     font-size: 1.5rem;
     font-weight: 700;
     padding: 2.5%;
+    width: 100%;
+    cursor: pointer;
 }
 
 tbody tr td{

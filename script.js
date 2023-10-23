@@ -12,6 +12,7 @@ const section = document.querySelector('section');
 const btn1 = document.getElementById('btn1');
 const btnSubmit = document.getElementById('envoyer');
 const validation = document.getElementById('idForm');
+const buttonAnnuler = document.getElementById('annuler')
 
 let nom = '';
 let prenom = '';
@@ -27,6 +28,13 @@ btn1.addEventListener('click', btn1Function);
 function btn1Function(){
     section.style.display = 'block';
     main.style.display = 'none';
+}
+
+buttonAnnuler.addEventListener('click', annulerFunction);
+
+function annulerFunction(){
+    section.style.display = 'none';
+    main.style.display = 'block';
 }
 
 inputNom.addEventListener('input', nomfunction)

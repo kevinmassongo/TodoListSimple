@@ -12,7 +12,7 @@
 </head>
 <body>
     <main>
-        <h1>KM Sercice sarl</h1>
+        <h1 class="logo">KM Sercice sarl</h1>
         <button id="btn1" class="btn1">Ajouter</button>
         <table>
             <thead>
@@ -36,25 +36,39 @@
     <div class="container">
         <h2>Ajouter un employé</h2>
         <form action="#" method="get" id="idForm">
-            <div>Nom</div>
-            <input type="text" id="inputNom" placeholder="Nom" required>
-            <div for="inputPrenom">Prénom</div>
-            <input type="text" id="inputPrenom" placeholder="Prénom" required>
-            <div for="email">Email</div>
-            <input type="email" id="email" placeholder="Email" required>
-            <div for="age">Age</div>
-            <input type="number" id="age" placeholder="Age" required>
-            <div for="poste">Poste</div>
-            <input type="text" id="poste" placeholder="Poste" required>
-            <div for="phone">Numéro de téléphone</div>
-            <input type="text" id="phone" placeholder="Numéro de téléphone" required>
+            <div class="inputGroup">
+                <input type="text" required="" autocomplete="off" id="inputNom">
+                <label for="inputNom">Nom</label>
+            </div>
+            <div class="inputGroup">
+                <input type="text" required="" autocomplete="off" id="inputPrenom">
+                <label for="inputPrenom">Prénom</label>
+            </div>
+            <div class="inputGroup">
+                <input type="email" required="" autocomplete="off" id="email">
+                <label for="email">Email</label>
+            </div>
+            <div class="inputGroup">
+                <input type="number" required="" autocomplete="off" id="age">
+                <label for="age">Age</label>
+            </div>
+            <div class="inputGroup">
+                <input type="text" required="" autocomplete="off" id="poste">
+                <label for="poste">Poste</label>
+            </div>
+            <div class="inputGroup">
+                <input type="text" required="" autocomplete="off" id="phone">
+                <label for="phone">Numéro de téléphone</label>
+            </div>
             <div>Statut marital</div>
             <select required>
                 <option value="Célibataire">Célibataire</option>
                 <option value="Marié">Marié</option>
             </select>
-            <div for="pays">Pays d'origine</div>
-            <input type="text" id="pays" placeholder="Pays d'origine" required><br>
+            <div class="inputGroup">
+                <input type="text" required="" autocomplete="off" id="pays">
+                <label for="pays">Pays d'origine</label>
+            </div>
             <input type="checkbox" id="svg" required>
             <label for="svg">Acceptez que toutes les informations fournies sont vraies!</label>
             <div class="box">
