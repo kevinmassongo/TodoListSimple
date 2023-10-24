@@ -175,6 +175,7 @@ input::placeholder{
     padding: 2.5%;
     width: 100%;
     cursor: pointer;
+    border: none;
 }
 
 tbody tr td{
